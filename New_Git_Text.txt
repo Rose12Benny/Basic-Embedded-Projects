@@ -1,6 +1,7 @@
 Introduction to Git Version Control
 
-Most important commands I learned working with GitBash
+Primary commands I learned working with GitBash
+
 
 1. git config --global user.name "Rose Benny"
 2. git config --global user.email rosebenny2001@gmail.com
