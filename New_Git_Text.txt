@@ -52,3 +52,6 @@ Follow the below steps:
 4. copy and paste the 3 commands one by one in git bash, after opening your local repo in bash
 5. Now, open the GitHub and go to code, see whether your files are linked
 6. You can now edit, commit the modified file, raise an issue and assigning to concerned accounts, such that various functions
+7. When closing an issue, after the editing, just commit it as a new branch and generate a pull request to merge into the main file.
+8. Now open the pull request and go to development and click the main merge option, then apply merge.
+9. Now, when you go to code, both issue and pull request will be cleared.
