@@ -40,4 +40,15 @@ For that,
 (h) git commit -a -m "Merged main and duplicate resolving conflict" ------ just committing is enough
 (i) git branch -d duplicate ------ It deletes the duplicate branch 
 This is how we edit both in main and in duplicate, also working in duplicate branch is similar as writing in rough and merging to fair.
-    
+
+
+
+
+Now we are going to see how to link my local repo with github cloud.
+Follow the below steps:
+1. Go to Github.com, sign in, create new repo
+2. give name to the repo, add description
+3. In quick setup, select option to push existing repo to github
+4. copy and paste the 3 commands one by one in git bash, after opening your local repo in bash
+5. Now, open the GitHub and go to code, see whether your files are linked
+6. You can now edit, commit the modified file, raise an issue and assigning to concerned accounts, such that various functions
