@@ -1,3 +1,5 @@
+DONE ENOUGH EDITING 
+
 Introduction to Git Version Control
 
 Primary commands I learned working with GitBash
