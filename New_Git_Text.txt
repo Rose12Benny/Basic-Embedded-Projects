@@ -1,0 +1,40 @@
+Introduction to Git Version Control
+
+New lessons I learned working with GitBash
+
+1. git config --global user.name "Rose Benny"
+2. git config --global user.email rosebenny2001@gmail.com
+3. git config --global init.default branch main
+4. git config -h ------ Overview of config
+5. git help config ------ Goes to separate page of git commands
+6. clear ------ It clears the page
+7. git init ------ Initialising git repository
+8. git status ------ List down staged, unstaged files, also mentions if all files are committed
+9. git add "home.txt" ------ adding single file
+10. git add --all (OR) git add . ------ adds all the file in just 1 command
+11. git commit ------ all the history gets registered 
+12. git commit -a -m "Edited home.txt" ------ If I want to commit only the edited text
+13. git mv "old file name" "new file name" ------ automatically edits the file name in site folder
+14. git commit -a -m "Changed the file name of Sweethome.jpg"
+15. git status
+16. git log ------ Small description of the details
+17. git log -p ------ detailed paragraph description of log
+18. git log --oneline ------ log description in one-line
+19. git branch duplicate ------ adding new branch named duplicate
+20. git branch ------ shows the branches, also the asterisk mentioned branch is the present branch
+21. git switch duplicate ------ branch from main, gets switched to duplicate (All files gets duplicated from the main to the duplicate)
+changes made in duplicate will not affect main, until merge command is given
+22. git merge -m "Merge main and duplicate" duplicate ------ duplicate branch is merged with the main branch
+23. When we edit both in main and in duplicate, and tries to merge them, conflict arises. 
+For that, 
+(a) while branch is main,  go to site folder, change "New lessons" ------> "Interesting content"
+(b) go to bash, and commit 
+(c) now switch to duplicate
+(d) while branch is duplicate, go to site folder, change "New lessons" ------> "Basic Commands"
+(e) go to bash, commit
+(f) git merge -m "Merge main and duplicate" duplicate ------ write merge command, but conflict arises
+(g) now, go to site file, and backspace the unwanted edit
+(h) git commit -a -m "Merged main and duplicate resolving conflict" ------ just committing is enough
+(i) git branch -d duplicate ------ It deletes the duplicate branch 
+This is how we edit both in main and in duplicate, also working in duplicate branch is similar as writing in rough and merging to fair.
+    
