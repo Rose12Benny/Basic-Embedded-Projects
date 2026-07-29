@@ -1,6 +1,6 @@
 Introduction to Git Version Control
 
-Interesting content I learned working with GitBash
+Basic Commands I learned working with GitBash
 
 1. git config --global user.name "Rose Benny"
 2. git config --global user.email rosebenny2001@gmail.com
