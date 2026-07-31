@@ -55,3 +55,21 @@ Follow the below steps:
 7. When closing an issue, after the editing, just commit it as a new branch and generate a pull request to merge into the main file.
 8. Now open the pull request and go to development and click the main merge option, then apply merge.
 9. Now, when you go to code, both issue and pull request will be cleared.
+
+
+Now, we are publishing our Software
+1. In right side, click on Create new release 
+2. Make a release tag
+3. Give tiltle
+4. Give a description
+5. Click on publish, we can see 2 codes as assets: Source code (zip file) and Source code (tar.gz)
+This is how we publish our software.
+
+
+Now, lets see how we pull these edits, changes into our site file (local repo), using bash:
+Method 1
+1. go to bash, type git fetch
+2. then, git merge
+
+Method 2
+1. git pull (If already Method 1 is done, then it shows as already uptodate)
