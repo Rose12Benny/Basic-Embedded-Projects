@@ -73,3 +73,28 @@ Method 1
 
 Method 2
 1. git pull (If already Method 1 is done, then it shows as already uptodate)
+
+
+
+Git SELF STUDY
+
+1. When organizing my GitHub Repo, I learned new commands
+
+(a) ls ------ List all folders or directories in local repo
+(b) mkdir "AVR Programming" ------ Create a folder named AVR Programming in Repo
+(c) find . ------ Start searching from current directory
+(d) -maxdepth 1 ------ Don't go inside the folders. Look only at the current directory
+(e) -type d ------ Only folder, a type specifier
+(f) find . -maxdepth 1 -type d ------ Find all folders in my current directory, but don't look inside them
+(g) ! -name "." ------ Don't include the current directory itself
+(h) ! -name "AVR Programming" ------ Don't include the folder called AVR Programming
+(i) -exec mv {} "AVR Programming/" ------ (You don't have to type each one) ie. => mv GPIO "AVR Programming/" , mv Timer0 "AVR Programming/" , mv UART "AVR Programming/"
+(j) \; ------ This is the end of the command I want you to execute, It's the syntax required by find -exec.
+
+Finally, when we put it altogether =>
+
+find . -maxdepth 1 -type d ! -name "." ! -name "AVR Programming" -exec mv {} "AVR Programming/" \; 
+
+means =>
+
+"Look in my current folder. Find all folders at this level, but don't include the current folder or the AVR Programming folder. For every folder you find, move it into AVR Programming."
