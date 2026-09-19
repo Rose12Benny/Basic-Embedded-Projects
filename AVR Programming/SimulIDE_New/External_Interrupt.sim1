@@ -1,0 +1,41 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="MCU" CircId="mega328-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-680,160" rotation="0" hflip="1" vflip="1" label="mega328-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="../../External_Interrupt/External_Interrupt/Debug/External_Interrupt.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" MainMcu="true" SerialMon="-1" />
+
+<item itemtype="Led" CircId="Led-2" mainComp="false" Show_id="false" Show_Val="false" Pos="-580,256" rotation="0" hflip="1" vflip="1" label="Led-2" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Ground" CircId="Ground-3" mainComp="false" Show_id="false" Show_Val="false" Pos="-532,296" rotation="0" hflip="1" vflip="1" label="Ground-3" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-4" mainComp="false" Show_id="false" Show_Val="false" Pos="-796,188" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-4" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Out="true" />
+
+<item itemtype="Push" CircId="Push-5" mainComp="false" Show_id="false" Show_Val="false" Pos="-728,220" rotation="0" hflip="1" vflip="1" label="Push-5" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1" />
+
+<item itemtype="Led" CircId="Led-6" mainComp="false" Show_id="false" Show_Val="false" Pos="-600,288" rotation="0" hflip="1" vflip="1" label="Led-6" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Blue" Grounded="false" Threshold="3.6 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Ground" CircId="Ground-7" mainComp="false" Show_id="false" Show_Val="false" Pos="-560,320" rotation="0" hflip="1" vflip="1" label="Ground-7" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Resistor" CircId="Resistor-16" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="-756,272" rotation="90" hflip="1" vflip="1" label="Resistor-16" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Ground" CircId="Ground-18" mainComp="false" Show_id="false" Show_Val="false" Pos="-752,316" rotation="0" hflip="1" vflip="1" label="Ground-18" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Node" CircId="Node-17" mainComp="false" Pos="-704,192" />
+
+<item itemtype="Connector" uid="Connector-4" startpinid="Fixed Voltage-4-outnod" endpinid="Push-5-pinP0" pointList="-780,188,-744,188,-744,220" />
+
+<item itemtype="Connector" uid="Connector-6" startpinid="Led-6-rPin" endpinid="Ground-7-Gnd" pointList="-584,288,-584,304,-560,304" />
+
+<item itemtype="Connector" uid="Connector-18" startpinid="Resistor-16-lPin" endpinid="Node-17-1" pointList="-756,256,-756,248,-704,248,-704,192" />
+
+<item itemtype="Connector" uid="Connector-19" startpinid="Push-5-switch0pinN" endpinid="Node-17-0" pointList="-712,220,-712,192,-704,192" />
+
+<item itemtype="Connector" uid="Connector-20" startpinid="Node-17-2" endpinid="mega328-1-PORTD2" pointList="-704,192,-688,192" />
+
+<item itemtype="Connector" uid="Connector-21" startpinid="Resistor-16-rPin" endpinid="Ground-18-Gnd" pointList="-756,288,-756,300,-752,300" />
+
+<item itemtype="Connector" uid="Connector-33" startpinid="Led-2-rPin" endpinid="Ground-3-Gnd" pointList="-564,256,-564,280,-532,280" />
+
+<item itemtype="Connector" uid="Connector-46" startpinid="mega328-1-PORTB4" endpinid="Led-6-lPin" pointList="-640,248,-652,248,-652,260,-616,260,-616,288" />
+
+<item itemtype="Connector" uid="Connector-47" startpinid="mega328-1-PORTB5" endpinid="Led-2-lPin" pointList="-640,240,-596,240,-596,256" />
+
+</circuit>
