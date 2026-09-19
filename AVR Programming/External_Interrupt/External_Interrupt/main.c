@@ -18,7 +18,7 @@ ISR(INT0_vect)   //Interrupt Service Routine for Ext Interrupt 0
 int main(void)
 {
     sei();   //Enabling Global Interrupt
-	DDRB&=~(1<<DDB5);   //Configuring PD2 as EXT INTERRUPT Input pin
+	DDRD&=~(1<<DDD2);   //Configuring PD2 as EXT INTERRUPT Input pin
 	EIFR|=(1<<INTF0);   //Writing 1 to INTF0 bit to clear(make it 0) the flag, otherwise led glows without interrupt request comes.
 	DDRB|=((1<<DDB5) | (1<<DDB4));   //PB5 as Output
 	EIMSK|=(1<<INT0);   //Enabling Ext Interrupt 0 using Ext Int Control Register
